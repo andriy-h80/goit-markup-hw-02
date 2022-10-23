@@ -1,107 +1,138 @@
 
 /* Загальні стилі */
+
+:root{
+  --white-color: #FFFFFF;
+  --text-color: #757575;
+  --hover-color: #2196F3;
+  --section-color: #2F303A;
+  --name-color: #212121;
+}
+
 body{
   font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  background-color: var(--white-color);
+}
+
+a{
+  text-decoration: none;
+}
+
+header > a{
+  color: var(--text-color);
+}
+
+a:hover,
+a:focus{
+  color:  var(--hover-color);
+}
+
+li{
+  list-style: none;
 }
 
 /* Перша частина логотипу */
 .web{
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196F3;
+  color:  var(--hover-color);
   }
 
-  /* Друга частина логотипу */
-.studio{
-  font-family: 'Raleway';
+  /* Друга частина логотипу - header */
+.studio-header{
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
 }
 
+ /* Друга частина логотипу - footer */
+ .studio-footer{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
 /* Посилання навігації */
-nav{
-  font-family: 'Roboto';
+.nav-link{
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121
-  /* color: #2196F3;*/
+  color:  var(--name-color)
 } 
 
-font-family: 'Roboto';
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
-color: #757575;
-
-color: #2196F3;
-
-a{
-text-decoration: none;
+.nav-link:hover,
+.nav-link:focus{
+  color: var(--hover-color);
 }
 
-li{
-list-style: none;
+.link{
+  color: var(--hover-color);
 }
 
 /* Головний заголовок */
-.first-title{
-  font-family: 'Roboto';
+.general-title{
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--white-color);
 }
 /* Блок - "Титул" */
 .hero{
-  background-color: #2F303A;
+  background-color:  var(--section-color);
 }
 
 /* Кнопкa з головної сторінки */
-.button{
-  font-family: 'Roboto';
+.button-hero{
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.88;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
-  background-color: #2196F3;
+  color: var(--white-color);
+  background-color:  var(--hover-color);
+  cursor: pointer;
 }
 /* Кнопки з портфолио */
-/* .button
-  font-family: 'Roboto';
+.button{
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
- */
+  color:  var(--name-color);
+  cursor: pointer;
+}
 
+.button:hover,
+.button:focus {
+  color: var(--white-color);
+  background-color:  var(--hover-color);
+}
 
-/* Другий заголовок */
-.second-title{
-  font-family: 'Roboto';
+/* Заголовок про нас */
+.secondary-title{
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.2;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--name-color);
 }
 
 /* Приховування */
@@ -118,70 +149,79 @@ list-style: none;
   margin: -1px;
 } 
 
-/* Третій заголовок */
-.third-title{
-font-family: 'Roboto';
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #212121;
+/* Заголовок переваг */
+.title-advantage{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color:  var(--name-color);
 }
 
 /* Опис переваг */
 .advantage{
-font-family: 'Roboto';
-font-size: 14px;
-line-height: 1.7;
-letter-spacing: 0.03em;
-color: #757575;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 /* Блок - "команда" */
 .team{
-background-color: #F5F4FA;  
+  background-color: #F5F4FA;  
 }
 
 /* П.І.Б */
 .name{
-font-family: 'Roboto';
-font-weight: 500;
-font-size: 16px;
-line-height: 1.7;
-text-align: center;
-letter-spacing: 0.03em;
-color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color:  var(--name-color);
 }
 
 /* Посади */
 .position{
-font-family: 'Roboto';
-font-size: 16px;
-line-height: 1.2;
-text-align: center;
-letter-spacing: 0.03em;
-color: #757575;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* Назва проекту */
 .project-name{
-font-family: 'Roboto';
-font-weight: 700;
-font-size: 18px;
-line-height: 2.0;
+  font-weight: 700;
+  font-size: 18px;
+line-height: 2.00;
 letter-spacing: 0.06em;
-color: #212121;
+color:  var(--name-color);
 }
 
 /* Тип проекту */
 .project-type{
-font-family: 'Roboto';
 font-size: 16px;
-line-height: 1.9;
+line-height: 1.88;
 letter-spacing: 0.03em;
-color: #757575;
 }
 
+/* Footer */
+.footer{
+  background-color: var(--section-color);
+}
 
+.footer-adres{
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
+.footer-mail,
+.footer-tel{
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
 

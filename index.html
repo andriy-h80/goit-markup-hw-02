@@ -14,14 +14,13 @@
 <body class="body">
     <!-- Шапка сторінки -->
     <header>
-        <!-- <a href="/"><span class="web">Web</span><span class="studio">Studio</span></a> -->
-        <a href="/"><span class="web">Web</span><span class="studio">Studio</span></a>
+        <a href="/"><span class="web">Web</span><span class="studio-header">Studio</span></a>
         <nav>
             <!-- Навігація на інші сторінки -->
             <ul>
-              <li><a href="index.html">Студія</a></li>
-              <li><a href="portfolio.html">Портфоліо</a></li>
-              <li><a href="/Контакти">Контакти</a></li>
+              <li><a href="./index.html" class="link">Студія</a></li>
+              <li><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
+              <li><a href="/Контакти" class="nav-link">Контакти</a></li>
             </ul>
         </nav>
 
@@ -35,8 +34,8 @@
     <main>
         <section class="hero">
         <!-- Назва HERO -->  
-            <h1 class="first-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="button">Замовити послугу</button>
+            <h1 class="general-title">Ефективні рішення для вашого бізнесу</h1>
+            <button type="button" class="button-hero">Замовити послугу</button>
         </section>    
 
         <section>
@@ -44,19 +43,19 @@
             <!-- Наші переваги -->
             <h2 class="visually-hidden">Наші переваги</h2>
             <li>
-                <h3 class="third-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                <h3 class="title-advantage">УВАГА ДО ДЕТАЛЕЙ</h3>
                 <p class="advantage">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
             </li>
             <li>   
-                <h3 class="third-title">ПУНКТУАЛЬНІСТЬ</h3>
+                <h3 class="title-advantage">ПУНКТУАЛЬНІСТЬ</h3>
                 <p class="advantage">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
             </li>
             <li>      
-                <h3 class="third-title">ПЛАНУВАННЯ</h3>
+                <h3 class="title-advantage">ПЛАНУВАННЯ</h3>
                 <p class="advantage">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
             <li>
-                <h3 class="third-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <h3 class="title-advantage">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                 <p class="advantage">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
         </ul>    
@@ -64,7 +63,7 @@
 
         <section>    
             <!-- Наша робота -->
-        <h2 class="second-title">Чим ми займаємося</h2>
+        <h2 class="secondary-title">Чим ми займаємося</h2>
             <ul>
                 <li>
                 <img src= "./images/box01s.jpg" alt= "Робота за планшетом" width= "370"/>
@@ -80,7 +79,7 @@
         
         <section class="team">
             <!-- Наша команда -->
-        <h2 class="second-title">Наша команда</h2>
+        <h2 class="secondary-title">Наша команда</h2>
             <img src= "./images/img01s-ihor.jpg" alt= "Співробітник Ігор" width= "270"/>
                 <p class="name">Ігор Дем'яненко</p>
                 <p class="position">Product Designer</p>
@@ -97,15 +96,15 @@
     </main>
 
     <!-- Підвал сторінки -->
-    <footer>
-        <h4>WebStudio</h4>
+    <footer class="footer">
+        <h4><span class="web">Web</span><span class="studio-footer">Studio</span></h4>
         <address>
         <!-- Посилання на адресу -->    
-        <a href="https://goo.gl/maps/DHbynrPCu6MxTHz17">м. Київ, пр-т Лесі Українки, 26</a> <br />
+        <a href="https://goo.gl/maps/DHbynrPCu6MxTHz17" class="footer-adres">м. Київ, пр-т Лесі Українки, 26</a> <br />
         <!-- Посилання на електронну адресу -->
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
+        <a href="mailto:info@devstudio.com" class="footer-mail">info@devstudio.com</a> <br />
         <!-- Посилання на телефон  -->
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
+        <a href="tel:+380961111111" class="footer-tel">+38 096 111 11 11</a>
         </address>
     </footer>
 </body>
